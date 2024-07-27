@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-boot-soap-client
+server:
+  port: 8081

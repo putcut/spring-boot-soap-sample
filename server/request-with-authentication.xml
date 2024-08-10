@@ -1,5 +1,5 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:gs="http://www.example.com/pokemons"
+                  xmlns:gs="http://www.example.com/okomes"
                   xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
     <soapenv:Header>
         <wsse:Security soapenv:mustUnderstand="1">
@@ -10,8 +10,8 @@
         </wsse:Security>
     </soapenv:Header>
     <soapenv:Body>
-        <gs:getPokemonRequest>
-            <gs:id>25</gs:id>
-        </gs:getPokemonRequest>
+        <gs:getHinshuRequest>
+            <gs:id>1</gs:id>
+        </gs:getHinshuRequest>
     </soapenv:Body>
 </soapenv:Envelope>

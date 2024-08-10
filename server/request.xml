@@ -1,8 +1,9 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://www.example.com/pokemons">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://www.example.com/okomes">
     <soapenv:Header />
     <soapenv:Body>
-        <gs:getPokemonRequest>
-            <gs:id>25</gs:id>
-        </gs:getPokemonRequest>
+        <gs:getHinshuRequest>
+            <gs:id>1</gs:id>
+        </gs:getHinshuRequest>
     </soapenv:Body>
 </soapenv:Envelope>

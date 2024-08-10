@@ -41,12 +41,12 @@ sourceSets {
 }
 
 bootJar {
-	archiveBaseName = 'pokemons'
+	archiveBaseName = 'okomes'
 	archiveVersion = '0.0.1'
 }
 
 task genJaxb {
-	ext.schema = "src/main/resources/pokemons.xsd"
+	ext.schema = "src/main/resources/okomes.xsd"
 
 	outputs.dir jaxbSourceDir
 

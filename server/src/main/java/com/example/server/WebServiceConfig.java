@@ -35,20 +35,20 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
 
-    // Bean name = 'pokemons' -> pokemons.wsdl で公開される
+    // Bean name = 'okomes' -> okomes.wsdl で公開される
     @Bean
-    DefaultWsdl11Definition pokemons(XsdSchema pokemonsSchema) {
+    DefaultWsdl11Definition okomes(XsdSchema okomesSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-        wsdl11Definition.setPortTypeName("Pokemons"); 
+        wsdl11Definition.setPortTypeName("Okomes"); 
         wsdl11Definition.setLocationUri("/ws");
-        wsdl11Definition.setTargetNamespace("http://www.example.com/pokemons");
-        wsdl11Definition.setSchema(pokemonsSchema);
+        wsdl11Definition.setTargetNamespace("http://www.example.com/okomes");
+        wsdl11Definition.setSchema(okomesSchema);
         return wsdl11Definition;
     }
 
     @Bean
-    XsdSchema pokemonsSchema() {
-        return new SimpleXsdSchema(new ClassPathResource("pokemons.xsd"));
+    XsdSchema okomesSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("okomes.xsd"));
     }
 
     @Bean

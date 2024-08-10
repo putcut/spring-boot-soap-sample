@@ -17,9 +17,9 @@ public class ClientConfig {
     }
 
     @Bean
-    PokemonClient pokemonClient(Jaxb2Marshaller marshaller) {
-        PokemonClient client = new PokemonClient();
-        client.setDefaultUri("http://host.docker.internal:8080/ws/pokemons");
+    OkomeClient okomeClient(Jaxb2Marshaller marshaller) {
+        OkomeClient client = new OkomeClient();
+        client.setDefaultUri("http://host.docker.internal:8080/ws/okomes");
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         client.setInterceptors(new ClientInterceptor[] { securityInterceptor() });

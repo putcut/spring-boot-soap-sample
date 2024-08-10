@@ -56,7 +56,7 @@ task wsimport {
 				destdir: jaxwsSourceDir,
 				extension: "true",
 				verbose: true,
-				wsdl: "http://host.docker.internal:8080/ws/pokemons.wsdl",
+				wsdl: "http://host.docker.internal:8080/ws/okomes.wsdl",
 				xnocompile: true,
 				package: "com.example.wsdl"
 			) {
